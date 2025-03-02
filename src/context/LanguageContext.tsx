@@ -325,13 +325,7 @@ const translations = {
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   // Use a function in useState to avoid hydration mismatch
   const [language, setLanguage] = useState<Language>(() => {
-    // This only runs on the client after hydration
-    if (typeof window !== 'undefined') {
-      const savedLang = localStorage.getItem('language') as Language;
-      if (savedLang && (savedLang === 'en' || savedLang === 'ko')) {
-        return savedLang;
-      }
-    }
+    // Always default to English
     return 'en';
   });
 
