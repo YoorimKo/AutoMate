@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { ScrollAnimation } from '@/utils/animations';
+import Link from 'next/link';
 
 export default function Hero() {
   const { t, language } = useLanguage();
@@ -123,12 +124,12 @@ export default function Hero() {
                 {t('hero.subtitle')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="/contact" className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg text-center transition duration-300 transform hover:scale-105">
+                <Link href="/contact" className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg text-center transition duration-300 transform hover:scale-105">
                   {t('hero.cta.contact')}
-                </a>
-                <a href="/services" className="px-8 py-3 bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 text-gray-900 dark:text-white font-medium rounded-lg text-center transition duration-300">
+                </Link>
+                <Link href="/services" className="px-8 py-3 bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 text-gray-900 dark:text-white font-medium rounded-lg text-center transition duration-300">
                   {t('hero.cta.services')}
-                </a>
+                </Link>
               </div>
             </div>
           </ScrollAnimation>

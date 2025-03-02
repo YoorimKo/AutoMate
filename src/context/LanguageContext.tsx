@@ -23,6 +23,7 @@ const translations = {
     'nav.cases': 'Cases',
     'nav.contact': 'Contact',
     'nav.pricing': 'Pricing',
+    'nav.faq': 'FAQ',
     
     // Hero
     'hero.title': 'Enhance Productivity with Business Automation',
@@ -175,6 +176,7 @@ const translations = {
     'nav.cases': '사례',
     'nav.contact': '문의하기',
     'nav.pricing': '가격',
+    'nav.faq': '자주 묻는 질문',
     
     // Hero
     'hero.title': '비즈니스 자동화로 생산성을 높이세요',
