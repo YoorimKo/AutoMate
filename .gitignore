@@ -79,3 +79,59 @@ _next/
 *.bak
 *.tmp
 *.swp
+
+# 추가 제외 항목
+
+# 캐시 파일
+.eslintcache
+.stylelintcache
+.prettiercache
+
+# Turbopack 캐시
+.turbo/
+
+# 에셋과 정적 파일 컴파일 캐시
+public/sw.js
+public/sw.js.map
+public/workbox-*.js
+public/workbox-*.js.map
+
+# npm/yarn 잠금 파일 (선택적)
+# package-lock.json
+# yarn.lock
+
+# OS 관련 파일
+.directory
+Icon?
+ehthumbs.db
+[Dd]esktop.ini
+
+# 백업 파일
+*~
+*.orig
+*.rej
+
+# 임시 폴더 및 파일
+.history/
+.vscode-test
+tsconfig.tsbuildinfo
+
+# 로컬 설정 파일
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# Storybook
+storybook-static/
+
+# PWA 관련
+**/public/precache.*.*.js
+**/public/sw.js
+**/public/workbox-*.js
+**/public/worker-*.js
+**/public/fallback-*.js
+
+# 분석 보고서
+/analyze/
+.bundle-analyzer/
