@@ -17,6 +17,8 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  // 트레일링 슬래시 추가 (URL 일관성 유지)
+  trailingSlash: true,
 };
 
 export default nextConfig;
