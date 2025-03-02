@@ -65,3 +65,10 @@ logs
 .temp
 .tmp
 .cache/
+
+# GitHub Pages
+/.github/
+
+# 배포 결과물
+# out 폴더는 GitHub Pages 배포에 사용되므로 주석 처리
+# /out/ (이미 위에서 next.js 섹션에 포함됨)
