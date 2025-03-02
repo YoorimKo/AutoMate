@@ -65,3 +65,35 @@ logs
 .temp
 .tmp
 .cache/
+
+# sensitive data
+/config/secrets.json
+/config/credentials.json
+/config/api-keys.json
+/private
+/secrets
+
+# backups
+*.backup
+*.bak
+*~
+
+# system files
+.directory
+.fuse_hidden*
+.nfs*
+
+# database
+*.sqlite
+*.sqlite3
+*.db
+
+# deployment
+.firebase/
+.netlify/
+firebase-debug.log
+firebase-debug.*.log
+
+# personal notes
+notes.md
+TODO.md
